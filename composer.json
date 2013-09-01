@@ -1,0 +1,33 @@
+{
+    "name": "danielcsgomes/eventbrite-api-connector",
+    "description": "Eventbrite API Connector",
+    "keywords": ["evenbrite", "api"],
+    "homepage": "https://github.com/danielcsgomes/EventbriteApiConnector",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Gomes",
+            "email": "me@danielcsgomes.com",
+            "homepage": "http://danielcsgomes.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "kriswallsmith/buzz": "@stable",
+        "phpunit/phpunit": "3.7.*"
+    },
+    "suggest": {
+      "kriswallsmith/buzz": "Enabling Buzz allows you to use the BuzzHttpAdapter."
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {
+            "EventbriteApiConnector": "src/"
+        }
+    }
+}
