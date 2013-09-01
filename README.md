@@ -1,6 +1,8 @@
 Eventbrite API Connector
 ========================
 
+[![Build Status](https://travis-ci.org/danielcsgomes/EventbriteApiConnector.png?branch=master)](https://travis-ci.org/danielcsgomes/EventbriteApiConnector)
+
 Eventbrite Api Connector is a lightweight PHP 5.3 library for issuing the Eventbrite API.
 
 ### Instalation
