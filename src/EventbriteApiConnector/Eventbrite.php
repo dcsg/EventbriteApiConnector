@@ -120,6 +120,7 @@ class Eventbrite
 
     /**
      * Parser for options like scheme, headers and output format.
+     * 
      * @param array $options
      *
      * @return null
@@ -142,16 +143,17 @@ class Eventbrite
     /**
      * Handler for validate the response body.
      *
-     * @param $responseBody Content body of the response
+     * @param string $responseBody Content body of the response
+     *
      * @return string
      */
     private function responseHandler($responseBody)
     {
-        if ($this->outputFormat === 'json') {
-            return $this->parseJsonResponse($responseBody);
+        if ('json' === $this->outputFormat) {
+            return $this->validateJsonResponse($responseBody);
         }
 
-        return $this->parseXmlResponse($responseBody);
+        return $this->validateXmlResponse($responseBody);
     }
 
     /**
@@ -162,19 +164,19 @@ class Eventbrite
      * @return string
      * @throws \Exception
      */
-    private function parseJsonResponse($responseBody)
+    private function validateJsonResponse($responseBody)
     {
         $data = json_decode($responseBody);
-
-        if (isset($data->events) && count($data->events)) {
-            return $responseBody;
-        }
 
         if (isset($data->error)) {
             throw new \Exception($data->error->error_message);
         }
 
-        throw new \Exception('No results found.');
+        if (empty($data)) {
+            throw new \Exception('No results found.');
+        }
+
+        return $responseBody;
     }
 
     /**
@@ -185,19 +187,14 @@ class Eventbrite
      * @return string
      * @throws \Exception
      */
-    private function parseXmlResponse($responseBody)
+    private function validateXmlResponse($responseBody)
     {
         $data = simplexml_load_string($responseBody);
-
-        if (isset($data->event) && $data->event->count() > 0) {
-            return $responseBody;
-        }
 
         if (isset($data->error_type)) {
             throw new \Exception($data->error_message);
         }
 
-        throw new \Exception('No results found.');
-
+        return $responseBody;
     }
 }
