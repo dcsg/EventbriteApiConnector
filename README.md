@@ -19,6 +19,13 @@ Eventbrite Api Connector is a lightweight PHP 5.3 library for issuing the Eventb
 ### Usage
 
 ```php
+<?php
+
+require __DIR__ . '/path/to/vendor/autoload.php';
+
+use EventbriteApiConnector\Eventbrite;
+use EventbriteApiConnector\HttpAdapter\BuzzHttpAdapter;
+
 $apiKeys = array(
     'app_key' => 'YOUR APP KEY'
 );
