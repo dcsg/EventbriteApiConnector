@@ -1,7 +1,7 @@
 Eventbrite API Connector
 ========================
 
-[![Build Status](https://travis-ci.org/danielcsgomes/EventbriteApiConnector.png?branch=master)](https://travis-ci.org/danielcsgomes/EventbriteApiConnector)
+[![Build Status](https://travis-ci.org/danielcsgomes/EventbriteApiConnector.png?branch=master)](https://travis-ci.org/danielcsgomes/EventbriteApiConnector) [![Latest Stable Version](https://poser.pugx.org/danielcsgomes/eventbrite-api-connector/v/stable.png)](https://packagist.org/packages/danielcsgomes/eventbrite-api-connector) [![Total Downloads](https://poser.pugx.org/danielcsgomes/eventbrite-api-connector/downloads.png)](https://packagist.org/packages/danielcsgomes/eventbrite-api-connector)
 
 Eventbrite Api Connector is a lightweight PHP 5.3 library for issuing the Eventbrite API.
 
