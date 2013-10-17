@@ -120,7 +120,7 @@ class Eventbrite
 
     /**
      * Parser for options like scheme, headers and output format.
-     * 
+     *
      * @param array $options
      *
      * @return null
