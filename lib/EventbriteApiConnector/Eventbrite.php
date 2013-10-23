@@ -168,7 +168,11 @@ class Eventbrite
     {
         $data = json_decode($responseBody);
 
-        if (isset($data->error)) {
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            throw new \Exception('Error decoding JSON.');
+        }
+
+            if (isset($data->error)) {
             throw new \Exception($data->error->error_message);
         }
 
