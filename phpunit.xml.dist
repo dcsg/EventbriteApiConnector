@@ -18,12 +18,7 @@
     </php>
     <testsuites>
         <testsuite name="Eventbrite API Connector Test Suite">
-            <directory>./tests/</directory>
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
-    <filter>
-        <whitelist>
-            <directory>./src/EventbriteApiConnector/</directory>
-        </whitelist>
-    </filter>
 </phpunit>
