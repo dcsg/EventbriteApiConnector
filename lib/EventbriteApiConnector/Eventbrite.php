@@ -172,7 +172,7 @@ class Eventbrite
             throw new \Exception('Error decoding JSON.');
         }
 
-            if (isset($data->error)) {
+        if (isset($data->error)) {
             throw new \Exception($data->error->error_message);
         }
 
