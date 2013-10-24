@@ -42,7 +42,6 @@ $results = $eventbrite->get('event_search', $params);
 
  * Implement more HTTP Adapters
  * Implement OAuth2.
- * Add more tests.
  * Add documentation.
 
 ### Credits
