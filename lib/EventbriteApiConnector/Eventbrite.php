@@ -13,12 +13,9 @@ namespace EventbriteApiConnector;
 use EventbriteApiConnector\HttpAdapter\HttpAdapterInterface;
 
 /**
- * @author Daniel Gomes <me@danielcsgomes.com>
- *
  * @package EventbriteApiConnector
  *
- * @TODO Implement more Http Adapters
- * @TODO Implement OAuth2
+ * @author Daniel Gomes <me@danielcsgomes.com>
  */
 class Eventbrite
 {
@@ -26,7 +23,8 @@ class Eventbrite
      * @var string
      * @Version Eventbrite Library version
      */
-    const VERSION = '0.1.1-dev';
+    const VERSION = '0.2.x-dev';
+
     /**
      * @var string
      */
