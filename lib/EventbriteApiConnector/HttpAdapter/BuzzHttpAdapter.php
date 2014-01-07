@@ -3,7 +3,7 @@
 /**
  * This file is part of the EventbriteApiConnector package.
  *
- * (c) Daniel Gomes <me@danielcsgomes.com>
+ * (c) 2013-2014 Daniel Gomes <me@danielcsgomes.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
