@@ -1,8 +1,8 @@
 {
-    "name": "danielcsgomes/eventbrite-api-connector",
+    "name": "dcsg/eventbrite-api-connector",
     "description": "Eventbrite API Connector",
     "keywords": ["evenbrite", "api"],
-    "homepage": "https://github.com/danielcsgomes/EventbriteApiConnector",
+    "homepage": "https://github.com/dcsg/EventbriteApiConnector",
     "type": "library",
     "license": "MIT",
     "authors": [
