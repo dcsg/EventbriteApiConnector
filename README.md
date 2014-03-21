@@ -51,4 +51,4 @@ $results = $eventbrite->get('event_search', $params);
 
 ### License
 
-**Eventbrite API Connector** is released under the MIT License. See the bundled LICENSE file for details.
+**Eventbrite API Connector** is released under the MIT License. See the bundled [LICENSE](https://github.com/dcsg/EventbriteApiConnector/blob/master/LICENSE) file for details.
